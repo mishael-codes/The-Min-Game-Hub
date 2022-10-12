@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 1s;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background: #252525;
+  color: #d4d4d4;
+}
+
+h1 {
+  margin: 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin: 3vh;
+}
+
+span {
+  color: hsl(24, 55%, 43%);
+}
+
+.result {
+  transition: 1s;
+}
+
+.resultSuccess {
+  color: hsl(123, 64%, 43%);
+  font-size: larger;
+  animation: success 1s linear 5;
+}
+
+.tryAgain {
+  color: hsl(64, 54%, 63%);
+  font-size: larger;
+  animation: tryAgain 0.2s ease-in 2;
+}
+
+.inputValue {
+  color: hsl(0, 44%, 53%);
+}
+
+#number {
+  border: 0;
+  outline: 0;
+  width: 23.01%;
+  margin: 2.5rem auto;
+  padding-bottom: 1.5vh;
+  background: transparent;
+  color: hsl(24, 55%, 43%);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  caret-color: hsl(24, 55%, 43%);
+  border-bottom: 10px double hsl(24, 55%, 43%);
+}
+
+#button,
+#next,
+.selectBtn,
+.visibleRestartBtn {
+  border: 0;
+  outline: 0;
+  width: 7rem;
+  margin: 0.6rem;
+  cursor: pointer;
+  color: #d4d4d4;
+  transition: 0.5s;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 15px;
+  padding: 1rem 0.3rem;
+  text-decoration: none;
+  background-color: hsl(24, 55%, 43%);
+}
+
+#next.active,
+.selectBtn:active {
+  background-color: #151515;
+}
+
+.points {
+  font-size: 4rem;
+  color: hsl(24, 55%, 43%);
+}
+
+.levelBtn,
+#startBtn {
+  border: none;
+  color: #d4d4d4;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: transparent;
+}
+
+.safe {
+  margin: 1rem;
+  color: hsl(120, 60%, 25%);
+}
+
+.dangerZone {
+  margin: 1;
+  color: hsl(0, 60%, 50%);
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.restartBtn{
+  display: none;
+}
+
+/* Result animation, failure or success */
+
+@keyframes success {
+  from {
+    color: hsl(123, 64%, 43%);
+    font-size: larger;
+  }
+  40% {
+    font-size: medium;
+  }
+  80% {
+    font-size: larger;
+  }
+}
+
+@keyframes tryAgain {
+  0% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(-5deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+}
+
+/* made responsive for mobile */
+
+@media screen and (max-width: 820px) {
+  body{
+    height: fit-content;
+  }
+  
+  #number {
+    width: 75%;
+  }
+
+  #next,
+  #button,
+  .selectBtn {
+    width: 90%;
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .levelBtn,
+  #startBtn {
+    width: 100%;
+    font-size: 1.25rem;
+    transition: 0ms;
+  }
+
+  #try {
+    font-size: large;
+  }
+
+  #number {
+    font-size: 1.2rem;
+  }
+}

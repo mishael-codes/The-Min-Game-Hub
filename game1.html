@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Number Guess - Easy</title>
+  </head>
+  <body onload="pickNumber(1, 10)">
+    <h1>
+      <span>G</span>uess <br />
+      <span>T</span>he <br />
+      <span>N</span>umber
+    </h1>
+    <h2><span>1</span> - 10</h2>
+    <p class="result"></p>
+    <input
+      type="number"
+      id="number"
+      placeholder="Enter a Number"
+      autofocus
+      min="1"
+      max="10"
+    />
+    <p id="try" class="safe">5</p>
+    <button id="button">GUESS</button>
+    <button id="next" onclick="selectNumber(1, 10)" disabled>NEXT</button>
+
+    <div class="footer">
+      <h2 class="points">0</h2>
+      <button class="restartBtn" onclick="restartGame(1, 10)">RESTART</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
