@@ -5,9 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Number Guess - One-in-a-Million</title>
+    <title>Guess The Number - One-in-a-Million</title>
   </head>
   <body onload="pickNumber(1, 1000000)">
+    <nav class="nav">
+      <div class="ham" onclick="showMenu()">
+        <span class="bar bar1"></span> <br />
+        <span class="bar bar2"></span>
+      </div>
+      <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="levels.html">Levels</a></li>
+      </ul>
+    </nav>
     <h1>
       <span>G</span>uess <br />
       <span>T</span>he <br />
@@ -15,14 +25,23 @@
     </h1>
     <h2><span>1</span> - 1000000</h2>
     <p class="result"></p>
-    <input type="number" id="number" placeholder="Enter a Number" autofocus min="1" max="1000000" />
+    <input
+      type="number"
+      id="number"
+      placeholder="Enter a Number"
+      autofocus
+      min="1"
+      max="1000000"
+    />
     <p id="try" class="safe">1</p>
     <button id="button">GUESS</button>
     <button id="next" onclick="selectNumber(1, 1000000)" disabled>NEXT</button>
 
     <div class="footer">
       <h2 class="points">0</h2>
-      <button class="restartBtn" onclick="restartGame(1, 1000000)">RESTART</button>
+      <button class="restartBtn" onclick="restartGame(1, 1000000)">
+        RESTART
+      </button>
     </div>
 
     <script src="script.js"></script>

@@ -5,9 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Number Guess - Hard</title>
+    <title>Guess The Number - Hard</title>
   </head>
   <body onload="pickNumber(1, 50)">
+    <nav class="nav">
+      <div class="ham" onclick="showMenu()">
+        <span class="bar bar1"></span> <br />
+        <span class="bar bar2"></span>
+      </div>
+      <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="levels.html">Levels</a></li>
+      </ul>
+    </nav>
     <h1>
       <span>G</span>uess <br />
       <span>T</span>he <br />
@@ -15,7 +25,14 @@
     </h1>
     <h2><span>1</span> - 50</h2>
     <p class="result"></p>
-    <input type="number" id="number" placeholder="Enter a Number" autofocus min="1" max="50"/>
+    <input
+      type="number"
+      id="number"
+      placeholder="Enter a Number"
+      autofocus
+      min="1"
+      max="50"
+    />
     <p id="try" class="safe">15</p>
     <button id="button">GUESS</button>
     <button id="next" onclick="selectNumber(1, 50)" disabled>NEXT</button>
