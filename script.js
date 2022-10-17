@@ -16,6 +16,8 @@ let result = document.querySelector(".result");
 let trials = document.getElementById("try").innerText;
 trials = parseInt(trials);
 
+let endGame = document.getElementById("gameOver");
+
 let num;
 
 const danger = trials / 2;
@@ -43,17 +45,19 @@ function selectNumber(min, max) {
 }
 
 function restartGame(min, max) {
+  endGame.style.display = "none";
+  guess.disabled = false;
   num = Math.floor(Math.random() * (max - min + 1)) + min;
   trials += x;
   tries.textContent = trials;
   pts.textContent = 0;
-  guess.disabled = false;
   result.textContent = " ";
   guess.value = 0;
   x = 0;
   result.classList.remove("tryAgain");
   tries.classList.remove("dangerZone");
   restart.classList.add("restartBtn");
+  btn.disabled = false;
 }
 
 btn.addEventListener("click", () => {
@@ -92,7 +96,7 @@ btn.addEventListener("click", () => {
   }
 
   if (trials == 0) {
-    alert("Game Over");
+    endGame.style.display = "block";
     btn.disabled = true;
     guess.disabled = true;
     restart.classList.remove("restartBtn");
@@ -100,13 +104,12 @@ btn.addEventListener("click", () => {
   }
 });
 
- 
 let bar1 = document.querySelector(".bar1");
 let bar2 = document.querySelector(".bar2");
 let navList = document.querySelector(".navlist");
 let nav = document.querySelector(".nav");
 
-function showMenu(){
+function showMenu() {
   bar1.classList.toggle("openBar1");
   bar2.classList.toggle("openBar2");
   navList.classList.toggle("menuList");

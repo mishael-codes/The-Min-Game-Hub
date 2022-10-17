@@ -10,7 +10,7 @@
   <body onload="pickNumber(1, 10)">
     <nav class="nav">
       <div class="ham" onclick="showMenu()">
-        <span class="bar bar1"></span> <br>
+        <span class="bar bar1"></span> <br />
         <span class="bar bar2"></span>
       </div>
       <ul class="navlist">
@@ -18,6 +18,10 @@
         <li><a href="levels.html">Levels</a></li>
       </ul>
     </nav>
+    <div id="gameOver" class="gameOver">
+      <h3>Game Over 😔</h3>
+      <button class="restartBtn" onclick="restartGame(1, 10)">RESTART</button>
+    </div>
     <h1>
       <span>G</span>uess <br />
       <span>T</span>he <br />
@@ -39,7 +43,6 @@
 
     <div class="footer">
       <h2 class="points">0</h2>
-      <button class="restartBtn" onclick="restartGame(1, 10)">RESTART</button>
     </div>
 
     <script src="script.js"></script>
