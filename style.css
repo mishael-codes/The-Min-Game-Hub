@@ -171,6 +171,7 @@ span {
   width: fit-content;
   height: fit-content;
   color: hsl(24, 55%, 43%);
+  border-radius: 15px;
   background-color: #151515;
   animation: zoom 1s ease-in forwards;
 }
@@ -281,6 +282,10 @@ span {
 
   #number {
     width: 75%;
+  }
+
+  #result {
+    margin: 0.3vh 1vw;
   }
 
   #next,
