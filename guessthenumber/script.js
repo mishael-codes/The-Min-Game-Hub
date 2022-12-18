@@ -28,6 +28,8 @@ function pickNumber(min, max) {
   result.classList.remove("resultSuccess");
   result.textContent = " ";
   next.disabled = true;
+
+  console.log(num);
 }
 
 function selectNumber(min, max) {
@@ -42,6 +44,7 @@ function selectNumber(min, max) {
   btn.disabled = false;
   guess.value = 0;
   x = 0;
+  console.log(num);
 }
 
 function restartGame(min, max) {

@@ -1,3 +1,7 @@
+:root {
+  --accent-color: hsl(24, 55%, 43%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +14,59 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
   background: #252525;
   color: #d4d4d4;
+  height: fit-content;
+}
+
+#hint {
+  position: fixed;
+  right: 0;
+  width: 10%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hint {
+  width: fit-content;
+  padding: 0.2rem;
+  padding-left: 0.4rem;
+  margin-bottom: 0.5rem;
+  padding-right: 2rem;
+  border-radius: 15px 0 0 15px;
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+#hint-text {
+  margin: auto;
+  width: fit-content;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.disabled {
+  cursor: not-allowed;
+  background-color: gray;
+}
+
+.games {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.levels {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .nav {
@@ -109,6 +163,7 @@ span {
 #button,
 #next,
 .selectBtn,
+.visibleHintBtn,
 .visibleRestartBtn {
   border: 0;
   outline: 0;
@@ -160,20 +215,30 @@ span {
   justify-content: center;
 }
 
-.restartBtn {
+.restartBtn,
+.hintBtn {
   display: none;
 }
 
-.gameOver {
+.gameOver,
+.hint-container {
   display: none;
   position: fixed;
   text-align: center;
   width: fit-content;
+  text-align: center;
   height: fit-content;
   color: hsl(24, 55%, 43%);
   border-radius: 15px;
   background-color: #151515;
   animation: zoom 1s ease-in forwards;
+}
+
+.showHintContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .gameOver h3 {
@@ -226,9 +291,24 @@ span {
 
 /* made responsive for mobile */
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 570px) {
   body {
     height: fit-content;
+  }
+
+  .game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .levels {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .nav {
@@ -309,5 +389,13 @@ span {
 
   #number {
     font-size: 1.2rem;
+  }
+
+  #hint {
+    margin-top: 2.5rem;
+  }
+
+  .hint-container {
+    width: 90%;
   }
 }

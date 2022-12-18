@@ -44,6 +44,18 @@
       max="100"
     />
     <p id="try" class="safe">25</p>
+
+    <div id="hint">
+      <p class="hint" onclick="showHint()">BH</p>
+      <p class="hint disabled" onclick="rhymeHint()">RH</p>
+      <p class="hint disabled" onclick="quoteHint()">QH</p>
+    </div>
+
+    <div class="hint-container">
+      <p id="hint-text"></p>
+      <button class="hintBtn">Okay</button>
+    </div>
+
     <button id="button">GUESS</button>
     <button id="next" onclick="selectNumber(1, 100)" disabled>NEXT</button>
 
@@ -52,5 +64,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="hint.js"></script>
   </body>
 </html>
