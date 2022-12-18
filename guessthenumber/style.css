@@ -107,6 +107,13 @@ body {
   text-decoration: underline hsl(24, 55%, 43%);
 }
 
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 h1 {
   margin: 1rem;
   text-align: left;
