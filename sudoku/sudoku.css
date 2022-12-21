@@ -110,6 +110,7 @@ main {
     }
     #board{
         scale: .8;
+        margin: 0;
     }
 
     #digits{
