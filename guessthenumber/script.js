@@ -72,14 +72,14 @@ btn.addEventListener("click", () => {
     result.textContent = "Please enter a number within the selected range!!!";
   } else if (guess.value > num) {
     result.classList.remove("inputValue");
-    result.textContent = "The number is lower than your guess!";
+    result.textContent = "Guess Lower!";
     result.classList.add("tryAgain");
     tries.textContent = trials -= 1;
     x += 1;
     // console.log(x);
   } else if (guess.value < num) {
     result.classList.remove("inputValue");
-    result.textContent = "The number is greater than your guess!";
+    result.textContent = "Guess Higher";
     result.classList.remove("tryAgain");
     result.classList.add("tryAgain");
     tries.textContent = trials -= 1;
@@ -92,6 +92,7 @@ btn.addEventListener("click", () => {
     pts.textContent = gamePts += 1;
     btn.disabled = true;
     next.disabled = false;
+    rhBtn.classList.remove("disabled");
   }
 
   if (trials < danger) {

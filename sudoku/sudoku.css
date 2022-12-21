@@ -1,0 +1,121 @@
+:root {
+  --background-color: #252525;
+  --text-color: #d4d4d4;
+  --accent-color: hsl(24, 55%, 43%);
+}
+
+body {
+  color: var(--text-color);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
+  overflow-x: hidden;
+}
+
+span {
+  color: var(--accent-color);
+}
+
+#errors {
+  color: var(--accent-color);
+}
+
+main {
+  min-width: 100vw;
+  min-height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#board {
+  width: 450px;
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  scale: 0.9;
+}
+
+.tile {
+  width: 48px;
+  height: 48px;
+  color: var(--accent-color);
+  border: 1px solid #000;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#digits {
+  width: 50px;
+  height: 450px;
+  display: flex;
+  justify-self: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  scale: 0.9;
+}
+
+.number {
+  width: 44px;
+  height: 44px;
+  border: 1px solid black;
+  margin: 2px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: hsl(24, 55%, 35%);
+}
+
+.number:hover {
+  background-color: hsl(24, 55%, 45%);
+}
+
+.selected {
+  color: var(--text-color);
+  background-color: hsl(24, 55%, 53%);
+}
+
+.tile-start {
+  color: var(--text-color);
+  background-color: var(--accent-color);
+}
+
+.horizontal-line {
+  border-bottom: 1px solid hsl(24, 55%, 53%);
+}
+
+.vertical-line {
+  border-right: 1px solid hsl(24, 55%, 53%);
+}
+
+@media screen and (max-width: 700px) {
+    body{
+        width: 100vw;
+    }
+    main{
+        width: 65%;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    #board{
+        scale: .8;
+    }
+
+    #digits{
+        scale: .8;
+        width: 450px;
+        height: 50px;
+        flex-direction: column;
+    }
+}

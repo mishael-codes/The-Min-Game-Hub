@@ -310,21 +310,13 @@ function showHint() {
     hintText.textContent = `You can't get a whole number after dividing me`;
 
   // hintContainer.style.display = "block";
-  hintContainer.classList.add("showHintContainer")
+  hintContainer.classList.add("showHintContainer");
   hintBtn.classList.remove("hintBtn");
   hintBtn.classList.add("visibleHintBtn");
 }
 
 hintBtn.addEventListener("click", () => {
   // hintContainer.style.display = "none";
-  hintContainer.classList.remove("showHintContainer")
+  hintContainer.classList.remove("showHintContainer");
   hintBtn.classList.add("hintBtn");
 });
-
-// function rhymeHints() {
-//   if (num == 2) {
-//     let arrayOfHints = ["Rhymes with stu", "This is an even number"];
-//     let randomizeHints = Math.floor(Math.random() * arrayOfHints.length);
-//     hintText.textContent = arrayOfHints[randomizeHints];
-//   }
-// }
