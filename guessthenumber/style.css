@@ -20,9 +20,14 @@ body {
 }
 
 #back-btn::after{
-  content: "<-";
+  content: "<";
+  position: absolute;
+  top: 2.7vh;
+  left: 5vw;
   width: 75px;
   height: 75px;
+  font-size: 2rem;
+  color: var(--accent-color);
 }
 
 #hint {
