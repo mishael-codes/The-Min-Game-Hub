@@ -19,6 +19,12 @@ body {
   height: fit-content;
 }
 
+#back-btn::after{
+  content: "<-";
+  width: 75px;
+  height: 75px;
+}
+
 #hint {
   position: fixed;
   right: 0;
