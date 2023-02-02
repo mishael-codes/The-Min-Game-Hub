@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,500&display=swap");
+
+:root {
+  --accent-color: hsl(24, 55%, 43%);
+  --bg-color: hsl(0, 0%, 15%);
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  color: var(--accent-color);
+  background-color: var(--bg-color);
+  font-weight: 400;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.choice {
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+  border-color: var(--accent-color) !important;
+  cursor: pointer;
+  rotate: -360deg;
+}
+
+.choice > i {
+  font-size: 0.7rem;
+  letter-spacing: 0.25rem;
+  transition: 0.1s;
+}
+
+.picks {
+  font-style: italic;
+  font-weight: 500;
+}
+
+#player-score,
+#computer-score {
+  font-weight: 600;
+}
+
+#wins,
+#draws,
+#losses {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 762px) {
+  .choice:hover {
+    color: var(--bg-color);
+    background: var(--accent-color);
+    box-shadow: inset 0 0 15px 7px var(--bg-color);
+    rotate: 360deg;
+  }
+
+  .choice:active {
+    scale: 0.8;
+    box-shadow: inset 0 0 100px 10px var(--bg-color);
+  }
+}

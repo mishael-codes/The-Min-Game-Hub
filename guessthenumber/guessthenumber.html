@@ -11,14 +11,26 @@
       href="images/icon-gth.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../general styles/nav-menu.css" />
     <title>Guess The Number</title>
   </head>
   <body>
-    <h1 style="margin-bottom: 7rem">
-      <span>G</span>uess <br />
-      <span>T</span>he <br />
-      <span>N</span>umber
-    </h1>
+    <nav class="nav">
+      <div class="ham" onclick="showMenu()">
+        <span class="bar bar1"></span> <br />
+        <span class="bar bar2"></span>
+      </div>
+      <ul class="navlist">
+        <li><a href="https://themingamehub.netlify.app/">MGH</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1 style="margin-bottom: 7rem">
+        <span>G</span>uess <br />
+        <span>T</span>he <br />
+        <span>N</span>umber
+      </h1>
+    </main>
 
     <a class="selectBtn" href="levels.html">
       <button id="startBtn">START</button>

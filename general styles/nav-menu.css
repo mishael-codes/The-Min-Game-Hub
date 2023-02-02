@@ -1,0 +1,98 @@
+* {
+  transition: 0.7s;
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: start;
+  justify-content: center;
+  height: 100vh;
+  width: 15vw;
+  padding: 2rem;
+  background-color: #151515a6;
+  z-index: 1;
+}
+
+.ham {
+  display: none;
+}
+
+.navlist {
+  margin-top: 10vh;
+  list-style-type: none;
+  font-size: x-large;
+}
+
+.navlist > li:first-child {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid hsl(24, 55%, 43%);
+}
+
+.navlist > li > a:link {
+  color: hsl(24, 55%, 43%);
+  text-decoration: none;
+}
+
+.navlist > li > a:visited {
+  color: #d4d4d4;
+}
+
+.navlist > li > a:hover {
+  color: #d4d4d4;
+  text-decoration: underline hsl(24, 55%, 43%);
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ham {
+    display: block;
+    position: absolute;
+    top: 5vh;
+    left: 6vw;
+    cursor: pointer;
+    width: 52px;
+    height: 20px;
+    padding: auto;
+  }
+
+  .bar {
+    position: absolute;
+    width: 42px;
+    padding: 0.2rem;
+    background-color: hsl(24, 55%, 43%);
+    border-radius: 30px;
+    z-index: 99999;
+  }
+
+  .navlist {
+    margin-left: -1000px;
+  }
+
+  /* hamburger toggle css styling */
+  .openBar1 {
+    transform: rotate(45deg) translate(15px, 20px);
+  }
+
+  .openBar2 {
+    transform: rotate(135deg) translate(5px, 1px);
+  }
+
+  .menuList {
+    margin-left: 3vw;
+  }
+
+  .toggleNav {
+    width: 100vw;
+    background-color: rgba(21, 21, 21, 0.76);
+  }
+}
