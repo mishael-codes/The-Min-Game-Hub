@@ -5,10 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="sudoku.css" />
+    <link rel="stylesheet" href="../general styles/nav-menu.css">
     <title>Sudoku</title>
   </head>
   <body>
     <header>
+      <nav class="nav">
+        <div class="ham" onclick="showMenu()">
+          <span class="bar bar1"></span> <br />
+          <span class="bar bar2"></span>
+        </div>
+        <ul class="navlist">
+          <li><a href="../index.html">Home</a></li>
+          <!-- <li><a href="levels.html">Levels</a></li> -->
+        </ul>
+      </nav>
       <h1><span>S</span>udoku</h1>
       <h2 id="errors">0</h2>
     </header>
