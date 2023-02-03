@@ -3,6 +3,8 @@
 :root {
   --accent-color: hsl(24, 55%, 43%);
   --bg-color: hsl(0, 0%, 15%);
+  --disabled-bg: hsl(0, 0%, 33%);
+  --disabled-text: hsl(0, 0%, 83%);
 }
 
 * {
@@ -44,6 +46,13 @@ main {
   transition: 0.1s;
 }
 
+.choice-disabled{
+  color: var(--disabled-text);
+  border-color: var(--disabled-text) !important;
+  background: var(--disabled-bg);
+  rotate: 0deg;
+}
+
 .picks {
   font-style: italic;
   font-weight: 500;
@@ -60,6 +69,34 @@ main {
   font-size: 1.5rem;
 }
 
+.endgame {
+  display: none;
+  color: var(--bg-color);
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  position: absolute;
+  top: 30vh;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: inset 0 0 15px 7px var(--bg-color);
+  border-color: var(--accent-color) !important;
+  background-color: var(--accent-color);
+}
+
+.show-endgame {
+  display: block;
+  animation: showEndGame 0.7s ease-in 1 forwards;
+}
+
+.btn-container button {
+  color: var(--bg-color);
+  font-weight: 600;
+  box-shadow: 0 0 5px 3px var(--bg-color);
+  border-color: var(--accent-color) !important;
+}
+
 @media screen and (min-width: 762px) {
   .choice:hover {
     color: var(--bg-color);
@@ -71,5 +108,65 @@ main {
   .choice:active {
     scale: 0.8;
     box-shadow: inset 0 0 100px 10px var(--bg-color);
+  }
+
+  .choice-disabled:hover{
+    color: var(--disabled-text);
+    border-color: var(--disabled-text) !important;
+    background: var(--disabled-bg);
+    cursor: not-allowed;
+    rotate: 0deg !important;
+  }
+
+  .btn-container button:hover {
+    color: var(--bg-color);
+    animation: btnhover 0.3s ease-in 1 forwards;
+  }
+
+  .btn-container button:active {
+    transition: 0.7s;
+    color: var(--bg-color) !important;
+    scale: 0.8;
+  }
+}
+
+@keyframes btnhover {
+  0% {
+    translate: 10px;
+  }
+  30% {
+    translate: -7px;
+  }
+  60% {
+    translate: 4px;
+  }
+  90% {
+    translate: -1px;
+  }
+  100% {
+    translate: 0;
+  }
+}
+
+@keyframes showEndGame {
+  0% {
+    opacity: 0.1;
+    display: block;
+  }
+
+  30% {
+    opacity: 0.3;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  90% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

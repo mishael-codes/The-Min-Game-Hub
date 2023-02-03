@@ -13,8 +13,59 @@ const choices = [rock, paper, scissors];
 // created the logic for the computer to randomly select an option
 let computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
+//------------------ What happens when either side reaches 10 points ---------------------//
+// accesing the endgam container
+let endGame = document.querySelector(".endgame");
+let result = document.querySelector(".result");
+
+// creating reactions with emoji faces for both a loss and a win
+let loseReactions = ["😂", "😭", "😪", "😒", "🤣", "🥱", "🥺", "👎"];
+loseReactions = loseReactions[Math.floor(Math.random() * loseReactions.length)];
+
+let winReactions = [
+  "😀",
+  "😁",
+  "😎",
+  "😉",
+  "🤗",
+  "🤩",
+  "☺",
+  "😏",
+  "👍",
+  "🙌",
+  "🤝",
+];
+winReactions = winReactions[Math.floor(Math.random() * winReactions.length)];
+
 function compchoice() {
-  computerChoice = choices[Math.floor(Math.random() * choices.length)];
+  if (point1 < 10 && point2 < 10) {
+    computerChoice = choices[Math.floor(Math.random() * choices.length)];
+    rock.classList.remove("choice-disabled");
+    paper.classList.remove("choice-disabled");
+    scissors.classList.remove("choice-disabled");
+  } else if (point1 == 10) {
+    endGame.classList.add("show-endgame");
+    result.textContent = `You won!!! ${winReactions}`;
+  } else if (point2 == 10) {
+    endGame.classList.add("show-endgame");
+    result.textContent = `The computer won you!!! ${loseReactions}`;
+  }
+
+  if (point1 == 10 || point2 == 10) {
+    rock.classList.add("choice-disabled");
+    paper.classList.add("choice-disabled");
+    scissors.classList.add("choice-disabled");
+
+    point1 += 0;
+    point2 += 0;
+    winPoints += 0;
+    drawPoints += 0;
+    lossPoints += 0;
+
+    wins.textContent = winPoints += 0;
+    draws.textContent = drawPoints += 0;
+    losses.textContent += lossPoints += 0;
+  }
 }
 
 // Points system
@@ -26,14 +77,13 @@ let point2 = 0;
 
 // Accessing the different records
 let wins = document.getElementById("wins");
-let winPoints = 0
+let winPoints = 0;
 
 let draws = document.getElementById("draws");
 let drawPoints = 0;
 
 let losses = document.getElementById("losses");
 let lossPoints = 0;
-
 
 // The click events for the different options
 rock.addEventListener("click", () => {
@@ -82,4 +132,23 @@ scissors.addEventListener("click", () => {
     draws.textContent = drawPoints += 1;
     compchoice();
   }
+});
+
+let restart = document.querySelector(".restart");
+
+restart.addEventListener("click", () => {
+  point1 = 0;
+  point2 = 0;
+  winPoints = 0;
+  drawPoints = 0;
+  lossPoints = 0;
+
+  wins.textContent = 0;
+  draws.textContent = 0;
+  losses.textContent = 0;
+  playerPoints.textContent = 0;
+  computerPoints.textContent = 0;
+
+  endGame.classList.remove("show-endgame");
+  compchoice();
 });

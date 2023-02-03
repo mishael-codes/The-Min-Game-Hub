@@ -12,16 +12,16 @@
       sizes="32x32"
       href="images/icon-gth.png"
     />
-    <title>Guess The Number - Medium</title>
+    <title>Guess The Number - Insane</title>
   </head>
-  <body onload="pickNumber(1, 30)">
+  <body onload="pickNumber(1, 100)">
     <nav class="nav">
       <div class="ham" onclick="showMenu()">
         <span class="bar bar1"></span> <br />
         <span class="bar bar2"></span>
       </div>
       <ul class="navlist">
-        <li><a href="https://themingamehub.netlify.app/">Home</a></li>
+        <li><a href="../guessthenumber/guessthenumber.html">Home</a></li>
         <li><a href="levels.html">Levels</a></li>
       </ul>
     </nav>
@@ -34,7 +34,7 @@
       <span>T</span>he <br />
       <span>N</span>umber
     </h1>
-    <h2><span>1</span> - 30</h2>
+    <h2><span>1</span> - 100</h2>
     <p class="result"></p>
     <input
       type="number"
@@ -42,9 +42,9 @@
       placeholder="Enter a Number"
       autofocus
       min="1"
-      max="30"
+      max="100"
     />
-    <p id="try" class="safe">10</p>
+    <p id="try" class="safe">25</p>
 
     <div id="hint">
       <p class="hint" onclick="showHint()">BH</p>
@@ -58,7 +58,7 @@
     </div>
 
     <button id="button">GUESS</button>
-    <button id="next" onclick="selectNumber(1, 30)" disabled>NEXT</button>
+    <button id="next" onclick="selectNumber(1, 100)" disabled>NEXT</button>
 
     <div class="footer">
       <h2 class="points">0</h2>

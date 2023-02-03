@@ -1,4 +1,6 @@
 :root {
+  --bg-color: hsl(0, 0%, 15%);
+  --text-color: hsl(0, 0%, 83%);
   --accent-color: hsl(24, 55%, 43%);
 }
 
@@ -14,12 +16,12 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #252525;
-  color: #d4d4d4;
+  background: var(--bg-color);
+  color: var(--text-color);
   height: fit-content;
 }
 
-#back-btn::after{
+#back-btn::after {
   content: "<";
   position: absolute;
   top: 2.7vh;
@@ -76,7 +78,7 @@ body {
   flex-direction: column;
 }
 
-.container{
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,7 +143,7 @@ span {
   width: 7rem;
   margin: 0.6rem;
   cursor: pointer;
-  color: #d4d4d4;
+  color: var(--text-color);
   transition: 0.5s;
   font-weight: 700;
   text-align: center;
@@ -164,7 +166,7 @@ span {
 .levelBtn,
 #startBtn {
   border: none;
-  color: #d4d4d4;
+  color: var(--text-color);
   cursor: pointer;
   font-weight: 700;
   background-color: transparent;
@@ -218,7 +220,7 @@ span {
 
 .disabled {
   cursor: not-allowed;
-  background-color: gray;
+  background-color: hsl(0, 0%, 50%);
 }
 
 /* Result animation, failure or success */
