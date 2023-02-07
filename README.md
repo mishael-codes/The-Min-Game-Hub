@@ -18,7 +18,7 @@ Building this project also brought me much joy as I completed major parts of it 
 
 ### Guess The Number
 
-#### **_ How To Play _**
+#### ** _ How To Play _ **
  When the game loads, a random number is selected by the computer.
  
  For each respective level, you have a specific number of guesses. Once you exhaust it, it's game over.
@@ -29,7 +29,7 @@ Building this project also brought me much joy as I completed major parts of it 
  
  If you got the number right, click on next to generate another number.
  
-#### **_ Hints _**
+#### ** _ Hints _ **
 
  **BH(Basic Hints):** This gives hints to get the number based on basic math knowlegde like division and multiplication.
  
