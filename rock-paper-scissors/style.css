@@ -46,7 +46,12 @@ main {
   transition: 0.1s;
 }
 
-.choice-disabled{
+.choice:active {
+  scale: 0.8;
+  box-shadow: inset 0 0 100px 10px var(--bg-color);
+}
+
+.choice-disabled {
   color: var(--disabled-text);
   border-color: var(--disabled-text) !important;
   background: var(--disabled-bg);
@@ -97,6 +102,12 @@ main {
   border-color: var(--accent-color) !important;
 }
 
+.btn-container button:active {
+  transition: 0.7s;
+  color: var(--bg-color) !important;
+  scale: 0.8;
+}
+
 @media screen and (min-width: 762px) {
   .choice:hover {
     color: var(--bg-color);
@@ -105,12 +116,7 @@ main {
     rotate: 360deg;
   }
 
-  .choice:active {
-    scale: 0.8;
-    box-shadow: inset 0 0 100px 10px var(--bg-color);
-  }
-
-  .choice-disabled:hover{
+  .choice-disabled:hover {
     color: var(--disabled-text);
     border-color: var(--disabled-text) !important;
     background: var(--disabled-bg);
@@ -122,13 +128,9 @@ main {
     color: var(--bg-color);
     animation: btnhover 0.3s ease-in 1 forwards;
   }
-
-  .btn-container button:active {
-    transition: 0.7s;
-    color: var(--bg-color) !important;
-    scale: 0.8;
-  }
 }
+
+/* button animations */
 
 @keyframes btnhover {
   0% {
