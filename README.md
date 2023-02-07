@@ -1,9 +1,13 @@
 # The Min Game Hub
 
 -[About](#About)
+
 -[Tutorials](#Tutorials)
+
   -[Guess The Number](#Guess the number)
+  
       -[How To Play](#How To Play)
+      
       -[Hints]{#Hints)
 
 ### About
