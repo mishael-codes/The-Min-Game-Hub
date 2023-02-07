@@ -1,11 +1,14 @@
 # The Min Game Hub
 
--[About](#About)
+- [About](#About)
 
--[Tutorials](#Tutorials)
- -[Guess The Number](#Guess the number)
-  -[How To Play](#How To Play)
-  -[Hints](#Hints)
+- [Tutorials](#Tutorials)
+
+ - [Guess The Number](#Guess the number)
+ 
+  - [How To Play](#How To Play)
+  
+  - [Hints](#Hints)
 
 ### About
 This is a project which would help me to get a portfolio-worthy project. It is a site which has lots and lots of games to play(for now, it has just three) as a means of de-stressing, relaxation or just for fun.
