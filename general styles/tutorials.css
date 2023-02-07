@@ -1,0 +1,36 @@
+.tutorial {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 90vw;
+  min-height: 90vh;
+  opacity: 0.8;
+  background-color: var(--bg-color);
+}
+
+.tutorial H2 {
+  color: var(--accent-color);
+  opacity: 1;
+}
+
+.tutorial ul {
+  width: 75%;
+  opacity: 1;
+}
+
+.tutorial ul li {
+  font-size: 1.4rem;
+  padding-bottom: 0.5rem;
+  list-style-type: none;
+}
+
+.tutorial ul li::before {
+  content: "*";
+  color: var(--accent-color);
+  font-size: 2rem;
+}

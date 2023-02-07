@@ -55,16 +55,6 @@ function compchoice() {
     rock.classList.add("choice-disabled");
     paper.classList.add("choice-disabled");
     scissors.classList.add("choice-disabled");
-
-    point1 += 0;
-    point2 += 0;
-    winPoints += 0;
-    drawPoints += 0;
-    lossPoints += 0;
-
-    wins.textContent = winPoints += 0;
-    draws.textContent = drawPoints += 0;
-    losses.textContent += lossPoints += 0;
   }
 }
 

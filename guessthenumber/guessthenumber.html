@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../general styles/nav-menu.css" />
+    <link rel="stylesheet" href="../general styles/tutorials.css" />
     <title>Guess The Number</title>
   </head>
   <body>
@@ -30,10 +31,55 @@
         <span>T</span>he <br />
         <span>N</span>umber
       </h1>
+
+      <section class="tutorial">
+        <h2>How To Play</h2>
+        <ul>
+          <li>
+            When the game loads, a random number is selected by the computer.
+          </li>
+          <li>
+            For each respective level, you have a specific number of guesses.
+            Once you exhaust it, it&apos;s game over.
+          </li>
+          <li>
+            Enter a number within the specified range and click on the "Guess"
+            button to make a guess.
+          </li>
+          <li>
+            Depending on your guess, you will be told if you need to guess
+            higher, guess lower or if you got the number right.
+          </li>
+          <li>
+            If you got the number right, click on next to generate another
+            number.
+          </li>
+        </ul>
+        <h2>Hints</h2>
+        <ul>
+          <li>
+            BH(Basic Hints): This gives hints to get the number based on basic
+            math knowlegde like division and multiplication.
+          </li>
+          <li>
+            RH(Rhyme Hints): This gives hints to get the number by showing you
+            words that rhyme with the required number.
+          </li>
+          <li>
+            Solve: As thhe name implies, this solves the questions for you by
+            entering the required number in the input field. All you have to do
+            is click "Guess".
+          </li>
+        </ul>
+
+        <button id="close" class="selectBtn">Let&apos;s Play!!!</button>
+      </section>
     </main>
 
     <a class="selectBtn" href="levels.html">
       <button id="startBtn">START</button>
     </a>
+
+    <script src="../general scripts/tutorials.js"></script>
   </body>
 </html>
