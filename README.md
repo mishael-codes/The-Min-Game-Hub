@@ -7,18 +7,18 @@
     - [How To Play](#How-To-Play)
     - [Hints](#Hints)
 
-### About
+## About
 This is a project which would help me to get a portfolio-worthy project. It is a site which has lots and lots of games to play(for now, it has just three) as a means of de-stressing, relaxation or just for fun.
 
 This project gave me a better idea of how the DOM works, accessing, manipulating, styling and updating HTML elements with the DOM. I also affected the control flow using conditionals.
 
 Building this project also brought me much joy as I completed major parts of it **without following a tutorial!**😀
 
-### Tutorials
+## Tutorials
 
-####Guess The Number
+### Guess The Number
 
-##### How To Play
+#### **__How To Play__**
  When the game loads, a random number is selected by the computer.
  
  For each respective level, you have a specific number of guesses. Once you exhaust it, it's game over.
@@ -29,7 +29,7 @@ Building this project also brought me much joy as I completed major parts of it 
  
  If you got the number right, click on next to generate another number.
  
-##### Hints
+#### **__Hints__**
 
  **BH(Basic Hints):** This gives hints to get the number based on basic math knowlegde like division and multiplication.
  
