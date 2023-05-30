@@ -36,28 +36,28 @@ let winReactions = [
   "🤝",
 ];
 winReactions = winReactions[Math.floor(Math.random() * winReactions.length)];
-
+/* 
 function compchoice() {
-  if (point1 < 10 && point2 < 10) {
+  if (point1 < 3 && point2 < 3) {
     computerChoice = choices[Math.floor(Math.random() * choices.length)];
     rock.classList.remove("choice-disabled");
     paper.classList.remove("choice-disabled");
     scissors.classList.remove("choice-disabled");
-  } else if (point1 == 10) {
+  } else if (point1 == 3) {
     endGame.classList.add("show-endgame");
     result.textContent = `You won!!! ${winReactions}`;
-  } else if (point2 == 10) {
+  } else if (point2 == 3) {
     endGame.classList.add("show-endgame");
     result.textContent = `The computer won you!!! ${loseReactions}`;
   }
 
-  if (point1 == 10 || point2 == 10) {
+  if (point1 == 3 || point2 == 3) {
     rock.classList.add("choice-disabled");
     paper.classList.add("choice-disabled");
     scissors.classList.add("choice-disabled");
   }
 }
-
+ */
 // Points system
 let playerPoints = document.getElementById("player-score");
 let computerPoints = document.getElementById("computer-score");

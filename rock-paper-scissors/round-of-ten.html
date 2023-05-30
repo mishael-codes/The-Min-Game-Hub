@@ -112,5 +112,28 @@
 
     <script src="script.js"></script>
     <script src="../general scripts/ham-menu.js"></script>
+
+    <script>
+      function compchoice() {
+        if (point1 < 10 && point2 < 10) {
+          computerChoice = choices[Math.floor(Math.random() * choices.length)];
+          rock.classList.remove("choice-disabled");
+          paper.classList.remove("choice-disabled");
+          scissors.classList.remove("choice-disabled");
+        } else if (point1 == 10) {
+          endGame.classList.add("show-endgame");
+          result.textContent = `You won!!! ${winReactions}`;
+        } else if (point2 == 10) {
+          endGame.classList.add("show-endgame");
+          result.textContent = `The computer won you!!! ${loseReactions}`;
+        }
+
+        if (point1 == 10 || point2 == 10) {
+          rock.classList.add("choice-disabled");
+          paper.classList.add("choice-disabled");
+          scissors.classList.add("choice-disabled");
+        }
+      }
+    </script>
   </body>
 </html>
