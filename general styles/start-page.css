@@ -1,0 +1,7 @@
+body{
+  color: var(--text-color);
+}
+
+span {
+  color: var(--accent-color);
+}

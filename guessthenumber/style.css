@@ -152,7 +152,7 @@ span {
   text-decoration: none;
   background-color: hsl(24, 55%, 43%);
 }
-
+ 
 #next.active,
 .selectBtn:active {
   background-color: #151515;

@@ -1,0 +1,67 @@
+#back-btn::after {
+  content: "<";
+  position: absolute;
+  top: 2.7vh;
+  left: 5vw;
+  width: 75px;
+  height: 75px;
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+
+#button,
+#next,
+.selectBtn,
+.visibleHintBtn,
+.visibleRestartBtn {
+  border: 0;
+  outline: 0;
+  width: 7rem;
+  margin: 0.6rem;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: 0.5s;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 15px;
+  padding: 1rem 0.3rem;
+  text-decoration: none;
+  background-color: hsl(24, 55%, 43%);
+}
+ 
+#next.active,
+.selectBtn:active {
+  background-color: #151515;
+}
+
+.levelBtn,
+#startBtn {
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  font-weight: 700;
+  background-color: transparent;
+}
+
+.restartBtn,
+.hintBtn {
+  display: none;
+}
+
+
+@media screen and (max-width: 570px) {
+  #next,
+  #button,
+  .selectBtn {
+    width: 90%;
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .levelBtn,
+  #startBtn {
+    width: 100%;
+    font-size: 1.25rem;
+    transition: 0ms;
+  }
+}
