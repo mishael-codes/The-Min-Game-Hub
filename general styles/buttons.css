@@ -28,8 +28,12 @@
   text-decoration: none;
   background-color: hsl(24, 55%, 43%);
 }
+
+#button:active{
+  transform: translateY(10px);
+}
  
-#next.active,
+#next:active,
 .selectBtn:active {
   background-color: #151515;
 }

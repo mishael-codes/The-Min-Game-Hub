@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../general styles/start-page.css" />
+    <link rel="stylesheet" href="../general styles/body.css" />
+    <link rel="stylesheet" href="../general styles/buttons.css" />
+    <link rel="stylesheet" href="../general styles/nav-menu.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Would You Rather</title>
+  </head>
+  <body onload="displayQuestions()">
+    <nav class="nav">
+      <div class="ham" onclick="showMenu()">
+        <span class="bar bar1"></span> <br />
+        <span class="bar bar2"></span>
+      </div>
+      <ul class="navlist">
+        <li><a href="../index.html">TMGH</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>
+        <span>W</span>ould <br /><span>Y</span>ou <br /><span>R</span>ather...
+      </h1>
+      <section>
+        <p id="question">
+          <span id="spinner"></span>
+        </p>
+        <button id="button">Generate Question</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="../general scripts/ham-menu.js"></script>
+  </body>
+</html>

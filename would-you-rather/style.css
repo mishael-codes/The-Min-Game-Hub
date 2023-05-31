@@ -1,0 +1,20 @@
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 350px;
+  color: var(--text-color);
+}
+
+section > p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-inline: 20px;
+  margin-block: 40px;
+  min-height: 200px;
+  border: 2px solid var(--accent-color);
+  border-radius: 15px;
+}
