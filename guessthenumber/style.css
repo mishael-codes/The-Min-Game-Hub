@@ -21,17 +21,6 @@ body {
   height: fit-content;
 }
 
-#back-btn::after {
-  content: "<";
-  position: absolute;
-  top: 2.7vh;
-  left: 5vw;
-  width: 75px;
-  height: 75px;
-  font-size: 2rem;
-  color: var(--accent-color);
-}
-
 #hint {
   position: fixed;
   right: 0;
@@ -132,44 +121,10 @@ span {
   caret-color: hsl(24, 55%, 43%);
   border-bottom: 10px double hsl(24, 55%, 43%);
 }
-
-#button,
-#next,
-.selectBtn,
-.visibleHintBtn,
-.visibleRestartBtn {
-  border: 0;
-  outline: 0;
-  width: 7rem;
-  margin: 0.6rem;
-  cursor: pointer;
-  color: var(--text-color);
-  transition: 0.5s;
-  font-weight: 700;
-  text-align: center;
-  border-radius: 15px;
-  padding: 1rem 0.3rem;
-  text-decoration: none;
-  background-color: hsl(24, 55%, 43%);
-}
  
-#next.active,
-.selectBtn:active {
-  background-color: #151515;
-}
-
 .points {
   font-size: 4rem;
   color: hsl(24, 55%, 43%);
-}
-
-.levelBtn,
-#startBtn {
-  border: none;
-  color: var(--text-color);
-  cursor: pointer;
-  font-weight: 700;
-  background-color: transparent;
 }
 
 .safe {
@@ -186,11 +141,6 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.restartBtn,
-.hintBtn {
-  display: none;
 }
 
 .gameOver,
@@ -216,11 +166,6 @@ span {
 
 .gameOver h3 {
   margin-bottom: 2.5vh;
-}
-
-.disabled {
-  cursor: not-allowed;
-  background-color: hsl(0, 0%, 50%);
 }
 
 /* Result animation, failure or success */
@@ -295,21 +240,6 @@ span {
 
   #result {
     margin: 0.3vh 1vw;
-  }
-
-  #next,
-  #button,
-  .selectBtn {
-    width: 90%;
-    margin: 1rem;
-    font-size: 1.5rem;
-  }
-
-  .levelBtn,
-  #startBtn {
-    width: 100%;
-    font-size: 1.25rem;
-    transition: 0ms;
   }
 
   #try {

@@ -52,6 +52,18 @@
   display: none;
 }
 
+.selectBtn{
+  height: fit-content;
+}
+
+.games{
+  height: 100px;
+}
+
+.disabled {
+  cursor: not-allowed;
+  background-color: hsl(0, 0%, 50%);
+}
 
 @media screen and (max-width: 570px) {
   #next,
@@ -67,5 +79,9 @@
     width: 100%;
     font-size: 1.25rem;
     transition: 0ms;
+  }
+
+  .games{
+    height: fit-content;
   }
 }
