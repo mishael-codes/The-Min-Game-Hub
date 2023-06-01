@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../images/TMGH.png" />
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../general styles/modals.css">
   <link rel="stylesheet" href="../general styles/body.css">
   <link rel="stylesheet" href="../general styles/nav-menu.css">
 </head>
@@ -24,7 +25,26 @@
   </nav>
   <main>
     <div id="gameboard"></div>
-    <p id="info"></p>
+    <p id="info"></p> 
+    <div
+        class="endgame"
+      >
+        <p class="result">Player wins</p>
+        <div
+          class="btn-container"
+        >
+          <button
+            class="exit"
+          >
+            Exit
+          </button>
+          <button
+            class="restart"
+          >
+            Restart
+          </button>
+        </div>
+      </div>
   </main>
 
   <script src="script.js"></script>

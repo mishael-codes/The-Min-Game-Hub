@@ -1,0 +1,104 @@
+.endgame {
+  display: none;
+  position: absolute;
+  top: 30vh;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--bg-color);
+  width: 50%;
+  text-align: center;
+  padding-block: 3rem;
+  margin-inline: auto;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 3px solid var(--accent-color);
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 15px 7px var(--bg-color);
+  background-color: var(--accent-color);
+}
+
+.show-endgame {
+  display: block;
+  animation: showEndGame 0.7s ease-in 1 forwards;
+}
+
+.btn-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-block-start: 3rem;
+}
+
+.btn-container button {
+  width: 45%;
+  color: var(--bg-color);
+  padding: 0.55rem;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 0 5px 3px var(--bg-color);
+  margin-block: .5rem;
+  border: 3px solid var(--accent-color) !important;
+  border-radius: 0.5rem;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 762px) {
+  .btn-container{
+    flex-direction: row;
+  }
+
+  .btn-container button{
+    margin-block: 0;
+    margin-inline: .5rem;
+  }
+
+  .btn-container button:hover {
+    color: var(--bg-color);
+    animation: btnhover 0.3s ease-in 1 forwards;
+  }
+}
+
+/* button animations */
+
+@keyframes btnhover {
+  0% {
+    translate: 10px;
+  }
+  30% {
+    translate: -7px;
+  }
+  60% {
+    translate: 4px;
+  }
+  90% {
+    translate: -1px;
+  }
+  100% {
+    translate: 0;
+  }
+}
+
+@keyframes showEndGame {
+  0% {
+    opacity: 0.1;
+    display: block;
+  }
+
+  30% {
+    opacity: 0.3;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  90% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

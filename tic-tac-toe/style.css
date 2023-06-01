@@ -50,3 +50,9 @@
   margin-top: -15px;
   width: 100%;
 }
+
+#info{
+  margin-top: 3rem;
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
