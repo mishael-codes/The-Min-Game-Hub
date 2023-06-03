@@ -10,7 +10,7 @@ async function displayQuestions(){
   let display = document.getElementById('question');
   let num = document.getElementById('question-number');
 
-  num.textContent = questions.id;
+  num.textContent = parseInt(questions.id) + 1;
   display.textContent = questions.data;
 }
 
