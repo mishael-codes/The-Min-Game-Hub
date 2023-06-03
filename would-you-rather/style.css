@@ -7,14 +7,19 @@ section{
   color: var(--text-color);
 }
 
-section > p{
+section > div{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   text-align: center;
   padding-inline: 20px;
   margin-block: 40px;
   min-height: 200px;
   border: 2px solid var(--accent-color);
   border-radius: 15px;
+}
+
+section > div > p:first-child{
+  margin-bottom: 20px;
 }

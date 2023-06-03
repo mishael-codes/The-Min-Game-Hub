@@ -8,6 +8,9 @@ async function fetchQuestions(){
 async function displayQuestions(){
   let questions = await fetchQuestions()
   let display = document.getElementById('question');
+  let num = document.getElementById('question-number');
+
+  num.textContent = questions.id;
   display.textContent = questions.data;
 }
 
