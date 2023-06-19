@@ -73,7 +73,7 @@ btn.addEventListener("click", () => {
     result.classList.add("inputValue");
     result.textContent = "Please enter a number within the selected range!!!";
   } else if (guess.value > num) {
-    vibrate;
+    navigator.vibrate([100, 100]);
     result.classList.remove("inputValue");
     result.textContent = "Guess Lower!";
     result.classList.add("tryAgain");
