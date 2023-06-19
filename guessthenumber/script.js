@@ -105,5 +105,6 @@ btn.addEventListener("click", () => {
     guess.disabled = true;
     restart.classList.remove("restartBtn");
     restart.classList.add("visibleRestartBtn");
+    navigator.vibrate(400)
   }
 });
