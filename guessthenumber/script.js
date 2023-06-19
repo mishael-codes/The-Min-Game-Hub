@@ -22,8 +22,6 @@ let num;
 
 const danger = trials / 2;
 
-let vibrate = navigator.vibrate([100, 100]);
-
 function pickNumber(min, max) {
   num = Math.floor(Math.random() * (max - min + 1)) + min;
   tries.textContent = trials;
@@ -67,7 +65,7 @@ function restartGame(min, max) {
 
 btn.addEventListener("click", () => {
   if (!guess.value || guess.value == 0) {
-    vibrate;
+    navigator.vibrate([100, 100]);
     result.classList.add("inputValue");
     result.textContent = "You need to put in a value!";
   } else if (guess.value > maxNum) {
@@ -83,7 +81,7 @@ btn.addEventListener("click", () => {
     x += 1;
     // console.log(x);
   } else if (guess.value < num) {
-    vibrate;
+    navigator.vibrate([100, 100]);
     result.classList.remove("inputValue");
     result.textContent = "Guess Higher";
     result.classList.remove("tryAgain");
