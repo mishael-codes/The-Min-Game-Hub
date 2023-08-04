@@ -10,11 +10,9 @@
   - [Would You Rather?](#Would-You-Rather?)
 
 ## About
-This is a project which would help me to get a portfolio-worthy project. It is a site which has lots and lots of games to play(for now, it has just three) as a means of de-stressing, relaxation or just for fun.
+This is an open-source project which would help me and other contributors, get a portfolio-worthy project. It is a site which has a variety of games to play as a means of de-stressing, relaxation, or just for fun.
 
-This project gave me a better idea of how the DOM works, accessing, manipulating, styling and updating HTML elements with the DOM. I also affected the control flow using conditionals.
-
-Building this project also brought me much joy as I completed major parts of it **without following a tutorial!**😀
+This project gave me a better idea of how the DOM works, accessing, manipulating, styling and updating HTML elements with the DOM. I also affected the control flow using conditionals. I hope it would do the same for my fellow contributors.
 
 ## Tutorials
 
