@@ -14,6 +14,9 @@ This is an open-source project which would help me and other contributors, get a
 
 This project gave me a better idea of how the DOM works, accessing, manipulating, styling and updating HTML elements with the DOM. I also affected the control flow using conditionals. I hope it would do the same for my fellow contributors.
 
+### Contribution
+For more information about contributing, see [Contriution.md]
+
 ## Tutorials
 
 ### Guess The Number
