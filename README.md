@@ -1,6 +1,9 @@
 # The Min Game Hub
 
+## Table of Contents
+
 - [About](#About)
+- [Contribution](#Contribution)
 
 - [Tutorials](#Tutorials)
   - [Guess The Number](#Guess-the-number)
@@ -15,7 +18,7 @@ This is an open-source project which would help me and other contributors, get a
 This project gave me a better idea of how the DOM works, accessing, manipulating, styling and updating HTML elements with the DOM. I also affected the control flow using conditionals. I hope it would do the same for my fellow contributors.
 
 ### Contribution
-For more information about contributing, see [Contriution.md]
+For more information about contributing, see [Contriution.md](https://github.com/mishael-codes/The-Min-Game-Hub/blob/main/Contribution.md)
 
 ## Tutorials
 
