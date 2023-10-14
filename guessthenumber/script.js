@@ -77,16 +77,19 @@ function checkNumber(){
 
   // there is no guess value
   if (!guess.value || guess.value == 0) {
+    navigator.vibrate([100, 100]);
     result.classList.add("inputValue");
     result.textContent = "You need to put in a value!";
   } 
   // the gues value is larger than the maximum value to be guessed
   else if (guess.value > maxNum) {
+    vibrate;
     result.classList.add("inputValue");
     result.textContent = "Please enter a number within the selected range!!!";
   }
   // the guess value is greater than the number needed
   else if (guess.value > num) {
+    navigator.vibrate([100, 100]);
     result.classList.remove("inputValue");
     result.textContent = "Guess Lower!";
     result.classList.add("tryAgain");
@@ -95,6 +98,7 @@ function checkNumber(){
   } 
   // the guess value is lesser than the number needed
   else if (guess.value < num) {
+    navigator.vibrate([100, 100]);
     result.classList.remove("inputValue");
     result.textContent = "Guess Higher";
     result.classList.remove("tryAgain");
@@ -114,6 +118,7 @@ function checkNumber(){
 
   // shows when to add the warning
   if (trials < danger) {
+    navigator.vibrate([30, 50])
     tries.classList.add("dangerZone");
   }
 
@@ -124,8 +129,9 @@ function checkNumber(){
     guess.disabled = true;
     restart.classList.remove("restartBtn");
     restart.classList.add("visibleRestartBtn");
+    navigator.vibrate(400)
   }
-}
+};
 btn.addEventListener("click", checkNumber);
 guess.addEventListener("keypress", (e) => {
   if(e.key === "Enter"){
